@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>dark mode</title>
-    <style>
-      .white-theme {
-        background-color: white;
-        color: black;
-      }
-      .black-theme {
-        background-color: black;
-        color: white;
-      }
-    </style>
-</head>
-
-<body class="white-theme || black-theme">
-     <button onclick="theme()">dark mode</button>
-  <!---java script !---->
-   <script>
-     function theme() {
-       if (document.body.classList.toggle('white-theme')) {
-         document.body.classList.toggle('black-theme')
-       } else {
-         
+   <html>
+   
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+       body {}
+   
+       .dark-theme {
+         background-color: black;
+         color: #9EA0B0;
        }
-     }
-   </script>
-</body>
- 
-</html>
+   
+       .white-theme {
+         background-color: white;
+         color: black;
+       }
+     </style>
+     <title>hy</title>
+   </head>
+   
+   <body class="dark-theme || white-theme">
+     <button class="btn-toggle" onclick="theme()">Dark Mode</button>
+     <script>
+       function theme() {
+         if (document.body.classList.toggle('white-theme')) {
+           document.body.classList.toggle('black-theme')
+         } else {
+   
+         }
+       }
+     </script>
+   </body>
+   
+   </html>
