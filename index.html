@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dark mode</title>
+    <style>
+      .white-theme {
+        background-color: white;
+        color: black;
+      }
+      .black-theme {
+        background-color: black;
+        color: white;
+      }
+    </style>
+</head>
+
+<body class="white-theme || black-theme">
+     <button onclick="theme()">dark mode</button>
+  <!---java script !---->
+   <script>
+     function theme() {
+       if (document.body.classList.toggle('white-theme')) {
+         document.body.classList.toggle('black-theme')
+       } else {
+         
+       }
+     }
+   </script>
+</body>
+ 
+</html>
